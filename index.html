@@ -125,10 +125,26 @@
     .text-sm {
       font-size: 14px;
     }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .z-10 {
+      z-index: 10;
+    }
+
+    .object-cover {
+      object-fit: cover;
+    }
   </style>
 </head>
 <header
-  class="bg-gray-900 flex justify-between py-18"
+  class="flex justify-between py-18 relative z-10"
   style="padding: 18px 12px;"
 >
   <div class="flex justify-center items-center">
@@ -152,3 +168,16 @@
     </button>
   </div>
 </header>
+
+<section class="relative" style="top: -77px;">
+  <video
+    loop="loop"
+    autoplay="autoplay"
+    playsinline
+    muted="muted"
+    class="w-full h-full object-cover"
+    style="min-height: 550px"
+    src="./videos/galaxy.mp4"
+  ></video>
+  <!-- <img src="./img/hero.png" alt="" class="w-full"> -->
+</section>
