@@ -26,17 +26,33 @@
   .hidden {
     display: none;
   }
+
+  .flex {
+    display: flex;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .items-center {
+    align-items: center;
+  }
 </style>
 
-<header class="bg-gray-900">
-  <div>
-    <img src="" alt="" />
-    <a href="" class="text-white block">Pricing</a>
+<header class="bg-gray-900 flex justify-between">
+  <div class="flex justify-center items-center">
+    <img src="./logo.svg" alt="" />
+    <a href="" class="text-white">Pricing</a>
     <a href="" class="text-white">Courses</a>
-    <a href="" class="text-white hidden">Blog</a>
+    <a href="" class="text-white">Blog</a>
     <a href="" class="text-white">Forum</a>
   </div>
-  <div>
+  <div class="flex items-center">
     <a href="" class="text-white">Login</a>
     <button>Sign Up</button>
   </div>
