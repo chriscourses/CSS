@@ -1,91 +1,154 @@
-<style>
-  body {
-    margin: 0;
-  }
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
 
-  .bg-gray-900 {
-    background-color: #121826;
-  }
+    button {
+      font-family: 'Lato', sans-serif;
+    }
 
-  .text-white {
-    color: white;
-  }
+    .bg-gray-900 {
+      background-color: #121826;
+    }
 
-  .block {
-    display: block;
-  }
+    .text-white {
+      color: white;
+    }
 
-  .inline-block {
-    display: inline-block;
-  }
+    .block {
+      display: block;
+    }
 
-  .inline {
-    display: inline;
-  }
+    .inline-block {
+      display: inline-block;
+    }
 
-  .hidden {
-    display: none;
-  }
+    .inline {
+      display: inline;
+    }
 
-  .flex {
-    display: flex;
-  }
+    .hidden {
+      display: none;
+    }
 
-  .justify-between {
-    justify-content: space-between;
-  }
+    .flex {
+      display: flex;
+    }
 
-  .justify-center {
-    justify-content: center;
-  }
+    .justify-between {
+      justify-content: space-between;
+    }
 
-  .items-center {
-    align-items: center;
-  }
+    .justify-center {
+      justify-content: center;
+    }
 
-  .m-8 {
-    margin: 8px;
-  }
+    .items-center {
+      align-items: center;
+    }
 
-  .p-8 {
-    padding: 8px;
-  }
+    .m-8 {
+      margin: 8px;
+    }
 
-  .pt-18 {
-    padding-top: 18px;
-  }
+    .p-8 {
+      padding: 8px;
+    }
 
-  .py-18 {
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
+    .pt-18 {
+      padding-top: 18px;
+    }
 
-  .py-8 {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+    .py-18 {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
 
-  .py-16 {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-</style>
+    .py-8 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
 
+    .px-16 {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .py-12 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .px-28 {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .no-underline {
+      text-decoration: none;
+    }
+
+    .bg-brand-teal {
+      background-color: #539d98;
+    }
+
+    .border-none {
+      border: none;
+    }
+
+    .rounded-full {
+      border-radius: 9999px;
+    }
+
+    .font-bold {
+      font-weight: bold;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .text-sm {
+      font-size: 14px;
+    }
+  </style>
+</head>
 <header
   class="bg-gray-900 flex justify-between py-18"
   style="padding: 18px 12px;"
 >
   <div class="flex justify-center items-center">
     <img src="./logo.svg" alt="" style="margin-right: 50px;" />
-    <a href="" class="text-white py-8 px-16">Pricing</a>
-    <a href="" class="text-white py-8 px-16">Courses</a>
-    <a href="" class="text-white py-8 px-16">Blog</a>
-    <a href="" class="text-white py-8 px-16">Forum</a>
+    <a href="" class="text-white py-8 px-16 no-underline">Pricing</a>
+    <a href="" class="text-white py-8 px-16 no-underline">Courses</a>
+    <a href="" class="text-white py-8 px-16 no-underline">Blog</a>
+    <a href="" class="text-white py-8 px-16 no-underline">Forum</a>
   </div>
   <div class="flex items-center">
-    <a href="" class="text-white py-8 px-16" style="margin-right: 12px;"
+    <a
+      href=""
+      class="text-white py-8 px-16 no-underline"
+      style="margin-right: 12px;"
       >Login</a
     >
-    <button>Sign Up</button>
+    <button
+      class="bg-brand-teal text-white border-none rounded-full py-12 px-28 font-bold uppercase text-sm"
+    >
+      Sign Up
+    </button>
   </div>
 </header>
