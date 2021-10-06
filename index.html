@@ -156,6 +156,11 @@
       font-size: 36px;
     }
 
+    .h-385px {
+      height: 385px;
+    }
+
+    /* sm screen size */
     @media (min-width: 640px) {
       .sm\:text-60px {
         font-size: 60px;
@@ -165,11 +170,18 @@
         font-size: 20px;
       }
     }
+
+    /* md screen size */
+    @media (min-width: 768px) {
+      .md\:h-689px {
+        height: 689px;
+      }
+    }
   </style>
 </head>
 <header
-  class="flex justify-between py-18 relative z-10 mx-auto"
-  style="padding: 18px 12px; max-width: 1200px;"
+  class="flex justify-between py-18 relative z-10 mx-auto px-6"
+  style="max-width: 1200px;"
 >
   <div class="flex justify-center items-center">
     <img src="./logo.svg" alt="" style="margin-right: 50px;" />
@@ -215,15 +227,12 @@
     autoplay="autoplay"
     playsinline
     muted="muted"
-    class="w-full h-full object-cover absolute"
-    style="height: 689px; top: -80px;"
+    class="w-full h-full object-cover absolute h-385px md:h-689px"
+    style="top: -80px;"
     src="./videos/galaxy.mp4"
   ></video>
   <!-- <img src="./img/hero.png" alt="" class="w-full"> -->
-  <div
-    style="padding: 0 12px; padding-top: 100px; max-width: 1200px;"
-    class="mx-auto"
-  >
+  <div style="max-width: 1200px;" class="mx-auto md:pt-32 px-6">
     <div class="relative z-10" style="max-width: 538px;">
       <h1 class="text-white text-36px sm:text-60px font-bold leading-none">
         Turbocharge your <span class="text-brand-teal">development career</span>
