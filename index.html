@@ -16,6 +16,7 @@
       -moz-osx-font-smoothing: grayscale;
       margin: 0;
       font-family: 'Lato', sans-serif;
+      background-color: #121826;
     }
 
     button {
@@ -156,8 +157,8 @@
       font-size: 36px;
     }
 
-    .h-385px {
-      height: 385px;
+    .h-450px {
+      height: 450px;
     }
 
     /* sm screen size */
@@ -227,8 +228,11 @@
   </header>
 </div>
 
-<section class="relative">
-  <div class="absolute h-385px md:h-689px" style="top: -80px;">
+<section
+  class="relative  overflow-hidden h-450px md:h-689px"
+  style="top: -80px;"
+>
+  <div class="absolute h-450px md:h-689px">
     <div class="bg-black inset-0 absolute z-10 opacity-50 md:hidden"></div>
     <video
       loop="loop"
@@ -242,7 +246,7 @@
   </div>
 
   <!-- <img src="./img/hero.png" alt="" class="w-full"> -->
-  <div style="max-width: 1200px;" class="mx-auto md:pt-32 px-6">
+  <div style="max-width: 1200px;" class="mx-auto pt-24 pb-8 md:pt-48 px-6">
     <div class="relative z-10" style="max-width: 538px;">
       <h1 class="text-white text-36px sm:text-60px font-bold leading-none">
         Turbocharge your <span class="text-brand-teal">development career</span>
@@ -261,5 +265,36 @@
         Get started
       </button>
     </div>
+  </div>
+</section>
+
+<!-- stats section -->
+<section class="bg-gray-900 px-6">
+  <div style="top: -100px;" class="relative z-20">
+    <div
+      class="bg-gray-800 rounded-lg md:flex md:mx-auto md:divide-x md:divide-gray-600"
+      style="max-width: 878px;"
+    >
+      <div
+        class="text-center py-12 border-b md:border-b-0 border-solid border-gray-600 md:w-1/3"
+      >
+        <h2 class="text-purple-300 font-bold text-5xl">84</h2>
+        <p class="text-gray-300 text-lg">Lessons</p>
+      </div>
+      <div
+        class="text-center py-12 border-b md:border-b-0 border-solid border-gray-600 md:w-1/3"
+      >
+        <h2 class="text-purple-300 font-bold text-5xl">29</h2>
+        <p class="text-gray-300 text-lg">Hours of Content</p>
+      </div>
+
+      <div class="text-center py-12 md:w-1/3">
+        <h2 class="text-purple-300 font-bold text-5xl">5095</h2>
+        <p class="text-gray-300 text-lg">Students</p>
+      </div>
+    </div>
+    <p class="text-gray-500 text-xs text-center mt-4">
+      Metrics update real-time
+    </p>
   </div>
 </section>
